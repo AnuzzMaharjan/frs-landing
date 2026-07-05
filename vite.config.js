@@ -7,6 +7,6 @@ export default defineConfig({
   // Custom domain served at the root, so base is '/'.
   base: '/',
   server: {
-    allowedHosts: ['friendshiprentalservice.com.np'],
+    allowedHosts: ['frs.anuj-maharjan.com.np','friendshiprentalservice.com.np'],
   },
 })
