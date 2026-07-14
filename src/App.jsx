@@ -82,6 +82,7 @@ const CONTENT = {
       tagline: 'Tents, seating, decor, and clean kitchen utensils for weddings, receptions, and parties across Lalitpur, Kathmandu & Bhaktapur.',
       linksTitle: 'Quick Links',
       contactTitle: 'Contact',
+      creditPrefix: 'Designed & built by',
     },
     footerCopy: (year) => `© ${year} Friendship Rental Service. All rights reserved.`,
   },
@@ -161,6 +162,7 @@ const CONTENT = {
       tagline: 'ललितपुर, काठमाडौं र भक्तपुरभरि विवाह, रिसेप्सन र पार्टीहरूको लागि टेन्ट, बसाइ, सजावट, र सफा भान्साका सामान।',
       linksTitle: 'छिटो लिङ्कहरू',
       contactTitle: 'सम्पर्क',
+      creditPrefix: 'डिजाइन तथा निर्माण:',
     },
     footerCopy: (year) => `© ${year} फ्रेन्डशिप रेन्टल सर्भिस। सर्वाधिकार सुरक्षित।`,
   },
@@ -448,8 +450,14 @@ function App() {
         </div>
 
         <div className="footer-bottom">
-          <div className="container">
+          <div className="container footer-bottom-inner">
             <p className="footer-copy">{t.footerCopy(new Date().getFullYear())}</p>
+            <p className="footer-credit">
+              {t.footer.creditPrefix}{' '}
+              <a href="https://anuj-maharjan.com.np" target="_blank" rel="noreferrer">
+                Anuj Maharjan
+              </a>
+            </p>
           </div>
         </div>
       </footer>
