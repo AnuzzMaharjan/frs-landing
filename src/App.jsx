@@ -361,6 +361,7 @@ function App() {
               <ul className="contact-details">
                 <li>
                   <strong>{t.contact.phoneLabel}</strong>
+                  <a href="tel:+9779841415451">+977 984-141-5451</a>
                   <a href="tel:+9779767473105">+977 976-747-3105</a>
                 </li>
                 <li>
@@ -442,6 +443,7 @@ function App() {
           <div className="footer-col">
             <h4>{t.footer.contactTitle}</h4>
             <ul className="footer-contact">
+              <li><a href="tel:+9779841415451">+977 984-141-5451</a></li>
               <li><a href="tel:+9779767473105">+977 976-747-3105</a></li>
               <li>{t.contact.basedIn}</li>
               <li>{t.contact.serving}</li>
