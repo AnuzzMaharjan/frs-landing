@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import logo from './assets/logo.jpg'
 import './App.css'
 
-const WHATSAPP_URL = 'https://wa.me/9779767473105?text=Hi%20Friendship%20Rental%20Service%2C%20I%27d%20like%20to%20ask%20about%20renting%20equipment%20for%20my%20event.'
+const WHATSAPP_URL = 'https://wa.me/9779767473105?text=Hi%20Friendship%20Rental%20Service%2C%20I%27d%20like%20to%20ask%20about%20renting%20equipment%20for%20my%20feast%2Fparty.'
 const FACEBOOK_URL = 'https://www.facebook.com/friendshiprentalservice'
 
 const CONTENT = {
@@ -16,9 +16,9 @@ const CONTENT = {
     ],
     headerCta: 'WhatsApp Us',
     hero: {
-      eyebrow: 'Tents · Seating · Decor · Kitchen Utensils',
-      title: 'Everything Your Event Needs, Delivered With a Handshake',
-      sub: 'Friendship Rental Service supplies tents, chairs, tables, decor, and clean large cooking utensils for weddings, receptions, and parties — set up on time, every time.',
+      eyebrow: 'Tents · Seating · Kitchen Utensils',
+      title: 'Everything Your Feast Needs, Delivered With a Handshake',
+      sub: 'Friendship Rental Service supplies tents, chairs, tables, and clean large cooking utensils for feasts, parties, and picnics — set up on time, every time.',
       ctaPrimary: 'Chat on WhatsApp',
       ctaSecondary: 'See What We Offer',
     },
@@ -26,26 +26,24 @@ const CONTENT = {
       eyebrow: 'What We Offer',
       title: 'Rentals for Every Kind of Celebration',
       items: [
-        { title: 'Tents & Canopies', desc: 'Weatherproof tents in a range of sizes to shelter any wedding, reception, or outdoor gathering.' },
+        { title: 'Tents & Canopies', desc: 'Weatherproof tents in a range of sizes to shelter any feast, party, or outdoor picnic.' },
         { title: 'Chairs & Tables', desc: 'Banquet chairs, round and rectangular tables with clean linens for every seating layout.' },
-        { title: 'Decor & Lighting', desc: 'Stage backdrops, floral arrangements, and string lighting to set the mood for your event.' },
-        { title: 'Sound & Stage Setup', desc: 'PA systems, stages, and platforms so speeches and performances come through clearly.' },
-        { title: 'Kitchen & Cooking Utensils', desc: 'Large cooking pots, serving trays, and kitchen equipment, cleaned and ready for big-batch event cooking.' },
+        { title: 'Kitchen & Cooking Utensils', desc: 'Large cooking pots, serving trays, and kitchen equipment, cleaned and ready for big-batch feast cooking.' },
       ],
     },
     steps: {
       eyebrow: 'How It Works',
       title: 'Booking With Us Is Simple',
       items: [
-        { n: '01', title: 'Tell Us Your Date', desc: 'Share your event date, guest count, and venue with our team.' },
-        { n: '02', title: 'Pick Your Setup', desc: 'We put together the tents, seating, and decor package that fits your budget.' },
-        { n: '03', title: 'We Deliver & Setup', desc: 'Our crew delivers, sets up, and clears everything so you can focus on the event.' },
+        { n: '01', title: 'Tell Us Your Date', desc: 'Share your feast, party, or picnic date, guest count, and venue with our team.' },
+        { n: '02', title: 'Pick Your Setup', desc: 'We put together the tents, seating, and kitchen utensil package that fits your budget.' },
+        { n: '03', title: 'We Deliver & Setup', desc: 'Our crew delivers, sets up, and clears everything so you can focus on your guests.' },
       ],
     },
     whyUs: {
       eyebrow: 'Why Friendship Rental Service',
       title: 'Service That Feels Like a Friend Helping Out',
-      sub: "Our name says it all — we treat every booking like we're helping a friend host their event, not just renting out equipment. With 20+ years in business, we've helped host hundreds of celebrations across the valley.",
+      sub: "Our name says it all — we treat every booking like we're helping a friend host their feast, not just renting out equipment. With 20+ years in business, we've helped host hundreds of celebrations across the valley.",
       list: [
         'Well-maintained, clean equipment for every rental',
         'On-time delivery and pickup, every time',
@@ -53,7 +51,7 @@ const CONTENT = {
         'Fair, transparent pricing with no hidden fees',
       ],
       stats: [
-        { value: '500+', label: 'Events Served' },
+        { value: '500+', label: 'Feasts & Parties Served' },
         { value: '20+', label: 'Years in Business' },
         { value: '100%', label: 'On-Time Setup' },
       ],
@@ -61,12 +59,12 @@ const CONTENT = {
     gallery: {
       eyebrow: 'Our Work',
       title: 'A Look at Recent Setups',
-      items: ['Wedding Tent Setup', 'Reception Seating', 'Stage & Lighting', 'Outdoor Canopy', 'Table Arrangements', 'Event Decor'],
+      items: ['Feast Tent Setup', 'Party Seating', 'Picnic Canopy', 'Outdoor Gathering', 'Table Arrangements', 'Cooking Utensils'],
       note: 'Photos coming soon — check back later.',
     },
     contact: {
       eyebrow: 'Get In Touch',
-      title: "Let's Plan Your Event",
+      title: "Let's Plan Your Feast",
       sub: "Reach out with your date and guest count, and we'll put together a quote within the day.",
       phoneLabel: 'Phone',
       basedInLabel: 'Based In',
@@ -76,10 +74,10 @@ const CONTENT = {
       whatsappTitle: 'Chat on WhatsApp',
       whatsappSub: 'Fastest way to reach us — usually reply within minutes',
       facebookTitle: 'Follow Us on Facebook',
-      facebookSub: 'See our latest setups and event photos',
+      facebookSub: 'See our latest setups and photos',
     },
     footer: {
-      tagline: 'Tents, seating, decor, and clean kitchen utensils for weddings, receptions, and parties across Lalitpur, Kathmandu & Bhaktapur.',
+      tagline: 'Tents, seating, and clean kitchen utensils for feasts, parties, and picnics across Lalitpur, Kathmandu & Bhaktapur.',
       linksTitle: 'Quick Links',
       contactTitle: 'Contact',
       creditPrefix: 'Designed & built by',
@@ -96,9 +94,9 @@ const CONTENT = {
     ],
     headerCta: 'ह्वाट्सएप गर्नुहोस्',
     hero: {
-      eyebrow: 'टेन्ट · बसाइ · सजावट · भान्साका सामान',
-      title: 'तपाईंको कार्यक्रमको लागि चाहिने सबै चिज, हातेमालोसँगै',
-      sub: 'फ्रेन्डशिप रेन्टल सर्भिसले विवाह, रिसेप्सन र पार्टीहरूको लागि टेन्ट, कुर्सी, टेबुल, सजावट, र सफा ठूला खाना पकाउने भाँडाकुँडा उपलब्ध गराउँछ — सधैं समयमै मिलाइदिन्छौं।',
+      eyebrow: 'टेन्ट · बसाइ · भान्साका सामान',
+      title: 'तपाईंको भोजको लागि चाहिने सबै चिज, हातेमालोसँगै',
+      sub: 'फ्रेन्डशिप रेन्टल सर्भिसले भोज, पार्टी र पिकनिकको लागि टेन्ट, कुर्सी, टेबुल, र सफा ठूला खाना पकाउने भाँडाकुँडा उपलब्ध गराउँछ — सधैं समयमै मिलाइदिन्छौं।',
       ctaPrimary: 'ह्वाट्सएपमा कुरा गर्नुहोस्',
       ctaSecondary: 'हाम्रा सेवाहरू हेर्नुहोस्',
     },
@@ -106,26 +104,24 @@ const CONTENT = {
       eyebrow: 'हामी के प्रदान गर्छौं',
       title: 'हरेक खालको उत्सवको लागि भाडा सेवा',
       items: [
-        { title: 'टेन्ट तथा छाना', desc: 'कुनै पनि विवाह, रिसेप्सन वा बाहिरी कार्यक्रमलाई ढाक्न विभिन्न साइजका मौसम प्रतिरोधी टेन्टहरू।' },
+        { title: 'टेन्ट तथा छाना', desc: 'कुनै पनि भोज, पार्टी वा बाहिरी पिकनिकलाई ढाक्न विभिन्न साइजका मौसम प्रतिरोधी टेन्टहरू।' },
         { title: 'कुर्सी तथा टेबुल', desc: 'हरेक बसाइ मिलानको लागि ब्यान्क्वेट कुर्सी, गोलो र आयातकार टेबुल, सफा तन्नासहित।' },
-        { title: 'सजावट तथा लाइटिङ', desc: 'तपाईंको कार्यक्रमको माहोल बनाउन स्टेज ब्याकड्रप, फूलको सजावट, र लाइटिङ।' },
-        { title: 'साउन्ड तथा स्टेज सेटअप', desc: 'भाषण र प्रस्तुतिहरू स्पष्ट सुनिनको लागि PA सिस्टम, स्टेज, र प्लेटफर्महरू।' },
-        { title: 'भान्साका सामान तथा भाँडाकुँडा', desc: 'ठूलो परिमाणमा खाना पकाउनको लागि सफा गरिएका ठूला डेकचीहरू, सर्भिङ ट्रे, र भान्साका सामानहरू।' },
+        { title: 'भान्साका सामान तथा भाँडाकुँडा', desc: 'भोजमा ठूलो परिमाणमा खाना पकाउनको लागि सफा गरिएका ठूला डेकचीहरू, सर्भिङ ट्रे, र भान्साका सामानहरू।' },
       ],
     },
     steps: {
       eyebrow: 'यसरी काम गर्छ',
       title: 'हामीसँग बुकिङ गर्न सजिलो छ',
       items: [
-        { n: '०१', title: 'आफ्नो मिति बताउनुहोस्', desc: 'आफ्नो कार्यक्रमको मिति, अतिथि संख्या, र स्थान हाम्रो टिमलाई बताउनुहोस्।' },
-        { n: '०२', title: 'आफ्नो सेटअप छान्नुहोस्', desc: 'हामी तपाईंको बजेटमा मिल्ने टेन्ट, बसाइ, र सजावट प्याकेज तयार गर्छौं।' },
-        { n: '०३', title: 'हामी डेलिभरी र सेटअप गर्छौं', desc: 'हाम्रो टिमले सामान ल्याउँछ, मिलाउँछ, र सबै फिर्ता लैजान्छ ताकि तपाईं कार्यक्रममा ध्यान दिन सक्नुहोस्।' },
+        { n: '०१', title: 'आफ्नो मिति बताउनुहोस्', desc: 'आफ्नो भोज, पार्टी वा पिकनिकको मिति, अतिथि संख्या, र स्थान हाम्रो टिमलाई बताउनुहोस्।' },
+        { n: '०२', title: 'आफ्नो सेटअप छान्नुहोस्', desc: 'हामी तपाईंको बजेटमा मिल्ने टेन्ट, बसाइ, र भान्साका सामानको प्याकेज तयार गर्छौं।' },
+        { n: '०३', title: 'हामी डेलिभरी र सेटअप गर्छौं', desc: 'हाम्रो टिमले सामान ल्याउँछ, मिलाउँछ, र सबै फिर्ता लैजान्छ ताकि तपाईं पाहुनाहरूमा ध्यान दिन सक्नुहोस्।' },
       ],
     },
     whyUs: {
       eyebrow: 'किन फ्रेन्डशिप रेन्टल सर्भिस',
       title: 'साथीले सहयोग गरे जस्तो सेवा',
-      sub: 'हाम्रो नामले नै सबै भन्छ — हामी हरेक बुकिङलाई साथीको कार्यक्रम मिलाइदिए जस्तै व्यवहार गर्छौं, केवल सामान भाडामा दिने होइन। २० वर्षभन्दा बढीको अनुभवसँगै, हामीले उपत्यकाभरि सयौं उत्सवहरू सफल बनाउन मद्दत गरेका छौं।',
+      sub: 'हाम्रो नामले नै सबै भन्छ — हामी हरेक बुकिङलाई साथीको भोज मिलाइदिए जस्तै व्यवहार गर्छौं, केवल सामान भाडामा दिने होइन। २० वर्षभन्दा बढीको अनुभवसँगै, हामीले उपत्यकाभरि सयौं उत्सवहरू सफल बनाउन मद्दत गरेका छौं।',
       list: [
         'हरेक भाडामा राम्रोसँग हेरचाह गरिएका, सफा सामानहरू',
         'सधैं समयमै डेलिभरी र फिर्ता लैजाने सेवा',
@@ -133,7 +129,7 @@ const CONTENT = {
         'लुकेको शुल्क बिना उचित र पारदर्शी मूल्य',
       ],
       stats: [
-        { value: '५००+', label: 'सम्पन्न कार्यक्रमहरू' },
+        { value: '५००+', label: 'सम्पन्न भोज तथा पार्टीहरू' },
         { value: '२०+', label: 'वर्षको अनुभव' },
         { value: '१००%', label: 'समयमै सेटअप' },
       ],
@@ -141,12 +137,12 @@ const CONTENT = {
     gallery: {
       eyebrow: 'हाम्रो काम',
       title: 'हालैका सेटअपहरूको झलक',
-      items: ['विवाह टेन्ट सेटअप', 'रिसेप्सन बसाइ', 'स्टेज र लाइटिङ', 'बाहिरी छाना', 'टेबुल मिलान', 'कार्यक्रम सजावट'],
-      note: 'फोटोहरू छिट्टै आउँदैछन् — हाम्रो अर्को कार्यक्रम पछि पुनः हेर्नुहोस्।',
+      items: ['भोज टेन्ट सेटअप', 'पार्टी बसाइ', 'पिकनिक छाना', 'बाहिरी जमघट', 'टेबुल मिलान', 'भान्साका भाँडाकुँडा'],
+      note: 'फोटोहरू छिट्टै आउँदैछन् — पछि पुनः हेर्नुहोस्।',
     },
     contact: {
       eyebrow: 'सम्पर्कमा रहनुहोस्',
-      title: 'तपाईंको कार्यक्रम मिलाऔं',
+      title: 'तपाईंको भोज मिलाऔं',
       sub: 'आफ्नो मिति र अतिथि संख्यासहित सम्पर्क गर्नुहोस्, हामी सोही दिन मूल्य कोट तयार गरिदिन्छौं।',
       phoneLabel: 'फोन',
       basedInLabel: 'स्थान',
@@ -156,10 +152,10 @@ const CONTENT = {
       whatsappTitle: 'ह्वाट्सएपमा कुरा गर्नुहोस्',
       whatsappSub: 'हामीसम्म पुग्ने सबैभन्दा छिटो तरिका — प्रायः मिनेटैमा जवाफ दिन्छौं',
       facebookTitle: 'फेसबुकमा फलो गर्नुहोस्',
-      facebookSub: 'हाम्रा पछिल्ला सेटअप र कार्यक्रमका फोटोहरू हेर्नुहोस्',
+      facebookSub: 'हाम्रा पछिल्ला सेटअपका फोटोहरू हेर्नुहोस्',
     },
     footer: {
-      tagline: 'ललितपुर, काठमाडौं र भक्तपुरभरि विवाह, रिसेप्सन र पार्टीहरूको लागि टेन्ट, बसाइ, सजावट, र सफा भान्साका सामान।',
+      tagline: 'ललितपुर, काठमाडौं र भक्तपुरभरि भोज, पार्टी र पिकनिकको लागि टेन्ट, बसाइ, र सफा भान्साका सामान।',
       linksTitle: 'छिटो लिङ्कहरू',
       contactTitle: 'सम्पर्क',
       creditPrefix: 'डिजाइन तथा निर्माण:',
